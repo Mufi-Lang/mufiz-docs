@@ -3,8 +3,8 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://mufiz.mustafif.com",
-  base: "/",
+  site: "https://mufi-lang.github.io",
+  base: "mufiz-docs",
   integrations: [
     starlight({
       title: "Mufi-Lang",
