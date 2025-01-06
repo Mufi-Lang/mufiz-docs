@@ -1,0 +1,68 @@
+---
+title: "Netwoking"
+---
+
+| Content Type | Integer Value |
+|--------------|---------------|
+| PlainText    | 0             |
+| HTML         | 1             |
+| JSON         | 2             |
+| XML          | 3             |
+| PDF          | 4             |
+| JPEG         | 5             |
+| PNG          | 6             |
+
+
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+<Card title="get_req( string, int, string, string ) string">
+    Sends a GET request to the given URL with the respective integer code for the ContentType and optional string parameters for User-Agent and Authorization headers. Returns the response body as a string.
+
+    **Example Usage:**
+    ```
+    var res = get_req("http://127.0.0.1:8000/data", 0);
+    print res;
+    // Output:
+    Default
+    ```
+</Card>
+
+<Card title="post_req( string, string, int, string, string ) string">
+    Sends a POST request to the given URL with the data to be written to it, the respective integer code for the ContentType, and optional string parameters for User-Agent and Authorization headers. Returns the response body as a string.
+
+    **Example Usage:**
+    ```
+    var res = post_req("http://127.0.0.1:8000/pos_data", "new value from post", 0);
+    print res;
+    // Output:
+    Data updated to new value from post
+    ```
+</Card>
+
+<Card title="put_req( string, string, int, string, string ) string">
+    Sends a PUT request to the given URL with the data to be written to it, the respective integer code for the ContentType, and optional string parameters for User-Agent and Authorization headers. Returns the response body as a string.
+
+    **Example Usage:**
+    ```
+    var res = put_req("http://127.0.0.1:8000/put_data", "new value from put", 0);
+    print res;
+    // Output:
+    Data updated to new value from put
+    ```
+</Card>
+
+<Card title="delete_req( string, int, string, string ) string">
+    Sends a DELETE request to the given URL with the respective integer code for the ContentType and optional string parameters for User-Agent and Authorization headers. Returns the response body as a string.
+
+    **Example Usage:**
+    ```
+    var res = delete_req("http://127.0.0.1:8000/del_data", 0);
+    print res;
+    // Output:
+    Data deleted
+    ```
+</Card>
+
+</CardGrid>

@@ -1,0 +1,82 @@
+---
+title: "File System"
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+<Card title="create_file( string ) bool">
+    Creates a new file with the specified path.
+
+    **Example Usage:**
+    ```
+    if(create_file("file.txt")){
+        print "Created file `file.txt`";
+    } else {
+        print "Failed to create file `file.txt`";
+    }
+    ```
+</Card>
+
+<Card title="write_file( string, string ) bool">
+    Writes to a file with the specified path and data.
+
+    **Example Usage:**
+    ```
+    if(write_file("file.txt", "Hello World!")){
+        print "Wrote to file `file.txt`";
+    } else {
+        print "Failed to write to file `file.txt`";
+    }
+    ```
+</Card>
+
+<Card title="read_file( string ) string">
+    Reads from a file with the specified path.
+
+    **Example Usage:**
+    ```
+    var str = read_file("file.txt"); // "Hello, World!"
+    ```
+</Card>
+
+<Card title="delete_file( string ) bool">
+    Deletes a file with the specified path.
+
+    **Example Usage:**
+    ```
+    if(delete_file("file.txt")){
+        print "Deleted file `file.txt`";
+    } else {
+        print "Failed to delete file `file.txt`";
+    }
+    ```
+</Card>
+
+<Card title="create_dir( string ) bool">
+    Creates a new directory with the specified path.
+
+    **Example Usage:**
+    ```
+    if(create_dir("files")){
+        print "Created directory `files`";
+    } else {
+        print "Failed to create directory `files`";
+    }
+    ```
+</Card>
+
+<Card title="delete_dir( string ) bool">
+    Deletes a directory with the specified path.
+
+    **Example Usage:**
+    ```
+    if(delete_dir("files")){
+        print "Deleted directory `files`";
+    } else {
+        print "Failed to delete directory `files`";
+    }
+    ```
+</Card>
+
+</CardGrid>

@@ -1,0 +1,179 @@
+---
+title: "Math"
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+    <Card title="log2( double ) double">
+        Returns the base-2 logarithm of a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = log2(8.0); // 3.0
+        ```
+    </Card>
+
+    <Card title="log10( double ) double">
+        Returns the base-10 logarithm of a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = log10(100.0); // 2.0
+        ```
+    </Card>
+
+    <Card title="sin( double ) double">
+        Returns the sine of a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = sin(0.0); // 0.0
+        ```
+    </Card>
+
+    <Card title="cos( double ) double">
+        Returns the cosine of a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = cos(0.0); // 1.0
+        ```
+    </Card>
+
+    <Card title="tan( double ) double">
+        Returns the tangent of a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = tan(0.0); // 0.0
+        ```
+    </Card>
+
+    <Card title="asin( double ) double">
+        Returns the arcsine of a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = asin(0.0); // 0.0
+        ```
+    </Card>
+
+    <Card title="acos( double ) double">
+        Returns the arccosine of a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = acos(1.0); // 0.0
+        ```
+    </Card>
+
+    <Card title="atan( double ) double">
+        Returns the arctangent of a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = atan(0.0); // 0.0
+        ```
+    </Card>
+
+    <Card title="sqrt( double ) double">
+        Returns the square root of a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = sqrt(4.0); // 2.0
+        ```
+    </Card>
+
+    <Card title="pow( numeric, double ) double">
+        Returns the value of a number raised to the power of another number.
+
+        **Example Usage:**
+        ```
+        var x = pow(2.0, 3.0); // 8.0
+        ```
+    </Card>
+
+    <Card title="abs( numeric ) (double/int)">
+        Returns the absolute value of a number.
+
+        **Example Usage:**
+        ```
+        var x = abs(-5); // 5
+        ```
+    </Card>
+
+    <Card title="phase( complex ) double">
+        Returns the phase of a complex number.
+
+        **Example Usage:**
+        ```
+        var x = phase(complex(3.0, 4.0)); // 0.927295
+        ```
+    </Card>
+
+    <Card title="ceil( double ) int">
+        Returns the smallest integer greater than or equal to a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = ceil(3.14); // 4
+        ```
+    </Card>
+
+    <Card title="floor( double ) int">
+        Returns the largest integer less than or equal to a floating-point number.
+
+        **Example Usage:**
+        ```
+        var x = floor(3.14); // 3
+        ```
+    </Card>
+
+    <Card title="round( double ) int">
+        Returns the value of a floating-point number rounded to the nearest integer.
+
+        **Example Usage:**
+        ```
+        var x = round(3.14); // 3
+        ```
+    </Card>
+
+    <Card title="pi( ) double">
+        Returns the value of the mathematical constant π.
+
+        **Example Usage:**
+        ```
+        var x = pi(); // 3.14159
+        ```
+    </Card>
+
+    <Card title="sfc( ) int">
+        Random number generator using Sfc64.
+
+        **Example Usage:**
+        ```
+        var x = sfc(); // 1374538710
+        ```
+    </Card>
+
+    <Card title="rand( ) double">
+        Returns a random floating-point number in the range [0, 1).
+
+        **Example Usage:**
+        ```
+        var x = rand(); // 0.267054
+        ```
+    </Card>
+
+    <Card title="randn( ) double">
+        Returns a random floating-point number from a normal distribution with mean 0 and standard deviation 1.
+
+        **Example Usage:**
+        ```
+        var x = randn(); // 0.260098
+        ```
+    </Card>
+
+</CardGrid>

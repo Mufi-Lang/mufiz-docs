@@ -1,0 +1,37 @@
+---
+title: "Time"
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+
+<Card title="now( ) int">
+    Returns the current time in seconds since the Unix epoch.
+
+    **Example Usage:**
+    ```
+    var x = now(); // 1708896589
+    ```
+</Card>
+
+<Card title="now_ns( ) double">
+    Returns the current time in nanoseconds since the Unix epoch.
+
+    **Example Usage:**
+    ```
+    var x = now_ns(); // 1.7089e+18
+    ```
+</Card>
+
+<Card title="now_ms( ) double">
+    Returns the current time in milliseconds since the Unix epoch.
+
+    **Example Usage:**
+    ```
+    var x = now_ms(); // 1.7089e+12
+    ```
+</Card>
+
+
+</CardGrid>

@@ -1,0 +1,35 @@
+---
+title: "Conversion"
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+<Card title="double( int ) double">
+    Converts an integer to a floating-point number.
+
+    **Example Usage:**
+    ```
+    var x = double(5); // 5.0
+    ```
+</Card>
+
+<Card title="int( double ) int">
+    Converts a floating-point number to an integer.
+
+    **Example Usage:**
+    ```
+    var x = int(5.0); // 5
+    ```
+</Card>
+
+<Card title="str( int/double ) string">
+    Converts an integer or double to a string.
+
+    **Example Usage:**
+    ```
+    var x = string(5); // "5"
+    ```
+</Card>
+
+</CardGrid>
