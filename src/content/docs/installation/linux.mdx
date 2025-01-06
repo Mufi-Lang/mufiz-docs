@@ -1,0 +1,75 @@
+---
+title: "Linux"
+description: "Installation on Linux"
+---
+
+## Manual Installation
+
+```bash
+# Need to replace {target} with the target triplet of your system
+$ wget https://github.com/Mufi-Lang/MufiZ/releases/download/v0.8.0/mufiz_0.8.0_{target}.zip
+$ unzip mufiz_0.8.0_{target}.zip
+$ sudo mv mufiz /usr/local/bin
+$ mufiz --version
+```
+
+<Card title="Shell Script Support" icon="information">
+    We are working on adding a shell script to automate the installation process on Linux.
+</Card>
+
+## APT
+
+Supported distributions:
+- Debian 12 (Bookworm)
+- Debian 13 (Trixie)
+- Debian 14 (Forky)
+- Ubuntu 22.04 (Jammy)
+- Ubuntu 24.04 (Noble)
+
+Supported architectures:
+- `amd64`
+- `i386`
+- `arm64`
+- `mipsel`
+- `mips64el`
+- `mips`
+- `powerpc`
+
+
+```bash
+$ curl -s https://packagecloud.io/install/repositories/Mustafif/MufiZ/script.deb.sh | sudo bash
+$ sudo apt install mufiz
+```
+
+## YUM
+
+Supported distributions:
+- Fedora 38
+- Fedora 39
+- Fedora 40
+- Fedora 41
+- openSUSE 42.3
+
+Supported architectures:
+- `x86_64`
+- `i386`
+- `aarch64`
+- `ppc64`
+- `ppc64le`
+- `mipsel`
+- `mips64el`
+- `mips64`
+- `mips`
+- `riscv64`
+
+```bash
+$ curl -s https://packagecloud.io/install/repositories/Mustafif/MufiZ/script.rpm.sh | sudo bash
+$ sudo yum install mufiz-{version}-1.{arch} # starts from version 0.6.0
+```
+
+import {Card} from '@astrojs/starlight/components';
+
+<Card title="Arch Linux Support" icon="information">
+We are working on adding Arch Linux packages support, however, you can still manually install MufiZ on Arch Linux.
+Stay tuned for more updates.
+</Card>
