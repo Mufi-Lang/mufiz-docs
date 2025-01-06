@@ -26,15 +26,15 @@ export default defineConfig({
           },
         },
         {
-          label: "[box] Guides",
+          label: "[box] Reference",
           autogenerate: {
-            directory: "guides",
+            directory: "ref",
           },
         },
         {
-          label: "[book] Reference",
+          label: "[book] Standard Library",
           autogenerate: {
-            directory: "reference",
+            directory: "std",
           },
         },
       ],

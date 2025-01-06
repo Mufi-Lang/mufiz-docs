@@ -1,0 +1,189 @@
+---
+title: "Variable and Data Types"
+description: "Learn about variables and data types in Mufi-Lang"
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Data Types
+
+Mufi-Lang has the following data types:
+
+<div style="display: flex; justify-content: center; margin: 1em 0;">
+  <table style="border-collapse: collapse; text-align: center; border: 1px solid #ccc;">
+    <thead>
+      <tr>
+        <th style="padding: 8px 12px; border: 1px solid #ccc;">Name</th>
+        <th style="padding: 8px 12px; border: 1px solid #ccc;">Size</th>
+        <th style="padding: 8px 12px; border: 1px solid #ccc;">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>int</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">2/4 bytes</td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Primitive</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>double</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">8 bytes</td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Primitive</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>bool</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">1 byte</td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Primitive</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>complex</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">16 bytes</td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Primitive</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>string</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">variable</td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Object</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>fvec</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">variable</td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Object</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>linked list</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">variable</td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Object</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>hash table</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">variable</td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Object</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<Card title="Array and Matrix Removal" icon="information">
+    The `array` and `matrix` data types have been removed from Mufi-Lang as of version `0.8.0`.
+    We are working on having `fvec` be the default array type for numerical types as it
+    can take advantage of SIMD instructions and is more memory efficient.
+    The `matrix` type will return once we have done the research of the best implementation
+    and build it to take advantage of SIMD operations.
+</Card>
+
+## Operators
+
+<div style="display: flex; justify-content: center; margin: 1em 0;">
+  <table style="border-collapse: collapse; text-align: center; border: 1px solid #ccc;">
+    <thead>
+      <tr>
+        <th style="padding: 8px 12px; border: 1px solid #ccc;">Operator</th>
+        <th style="padding: 8px 12px; border: 1px solid #ccc;">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>+</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Addition</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>-</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Subtraction</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>*</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Multiplication</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>/</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Division</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>%</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Modulus</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>==</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Equality</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>!=</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Inequality</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>&gt;</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Greater than</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>&lt;</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Less than</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>&gt;=</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Greater than or equal to</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>&lt;=</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Less than or equal to</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>!</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Logical NOT</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>and</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Logical AND</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>or</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Logical OR</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>+=</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Addition Assignment</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>-=</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Subtraction Assignment</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>*=</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Multiplication Assignment</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>/=</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Division Assignment</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>++</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Increment</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;"><code>--</code></td>
+        <td style="padding: 8px 12px; border: 1px solid #ccc;">Decrement</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## Variables
+
+Variables are used to store data, and are declared using the `var` keyword. You may
+choose to initialize the variable with a value or not. If you do not initialize the
+variable, it will be initialized with `nil`.
+
+```js
+var a = 10;
+var b; // or var b = nil;
+```
+
+### Global and Local Scopes
+Variables can be declared in the global scope or local scope. Global variables are declared outside of any function and can be accessed from anywhere in the program.
+Local variables are declared inside a function and can only be accessed within that function.
+
+```js
+var a = 10; // Global
+fun foo() {
+    var b = 20; // Local
+}
+print b; // Undefined variable 'b'.
+```
