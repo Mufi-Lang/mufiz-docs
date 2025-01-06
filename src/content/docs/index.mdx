@@ -1,36 +1,38 @@
 ---
-title: Ion Theme
-description: Get started building your docs site with Starlight & the Ion theme.
+title: Mufi-Lang
+description: Getting started with Mufi-Lang
 tableOfContents: false
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Welcome to Mufi-Lang
   image:
-    file: ../../assets/ion-logo.svg
+    file: ../../assets/Mufi.svg
   actions:
-    - text: Features Overview
-      link: /starlight-ion-theme/features/
+    - text: Check out the Latest Release!
+      link: https://github.com/mufi-lang/mufiz/releases/latest
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Read the MufiZ News
+      link: https://mufiz-news.mustafif.com
       icon: external
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
-
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Built Under Zig" icon="seti:zig">
+	Mufi-Lang's compiler, MufiZ, is built under Zig programming language.
+	This allows us to be able to easily cross-compile MufiZ to different toolchains,
+	including Windows, Linux, and MacOS. The language is built to be memory-safe, fast
+	and robust, with excellent C-interoperability (which we still depend upon).
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Experimental" icon="warning">
+	Mufi-Lang is an experimental language and has not reached a stable `v1.0` release.
+	As a solo developer working on this project, I am trying my best to grow the language,
+	however it is still in its early stages, and we hope to incorporate more research
+	towards newer features and improvements.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Opensource Forever" icon="openCollective">
+	Mufi-Lang's compiler, MufiZ is opensource and licensed under the GPLv2 license,
+	and a project under the MoKa Reads Foundation, a collective under the OpenCollective.
 	</Card>
 </CardGrid>
