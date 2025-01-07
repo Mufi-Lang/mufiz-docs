@@ -13,8 +13,19 @@ $ sudo mv mufiz /usr/local/bin
 $ mufiz --version
 ```
 
-<Card title="Shell Script Support" icon="information">
-    We are working on adding a shell script to automate the installation process on Linux.
+## Shell Script
+
+You can use the following command to install MufiZ on your system with our official script installer:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Mufi-Lang/installer/main/installer.sh | sudo sh
+```
+
+<Card title="Recommend to use Package Manager" icon="information">
+    If you are using a package manager like APT or YUM, it is recommended to use the package manager to install MufiZ.
+    When a new version is released, the package manager will automatically update the package, so you don't have to manually upgrade
+    to the latest version. The script installer is only recommended for users who are using a distribution that is not supported by the package manager,
+    and is only able to install the latest version of MufiZ, not see if there is an update available.
 </Card>
 
 ## APT

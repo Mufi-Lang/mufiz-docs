@@ -14,3 +14,11 @@ Supported architectures:
 $ brew tap mustafif/mufi
 $ brew install MufiZ
 ```
+
+## Shell Script
+
+You can use the following command to install MufiZ on your system with our official script installer:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Mufi-Lang/installer/main/installer.sh | sudo sh
+```
