@@ -20,5 +20,10 @@ $ brew install MufiZ
 You can use the following command to install MufiZ on your system with our official script installer:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Mufi-Lang/installer/main/installer.sh | sudo sh
+# Install MufiZ and mufizup
+curl -fsSL https://raw.githubusercontent.com/Mufi-Lang/installer/main/installer.sh | sudo sh -s install
+
+# After installation, you can use mufizup directly:
+sudo mufizup update    # Update MufiZ
+sudo mufizup remove    # Remove MufiZ and mufizup
 ```
